@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div class="filter-container">
+            <label>
+                <input type="radio" name="filter" value="all" checked onclick="filterTasks('all')"> All
+            </label>
+            <label>
+                <input type="radio" name="filter" value="active" onclick="filterTasks('active')"> Active
+            </label>
+            <label>
+                <input type="radio" name="filter" value="completed" onclick="filterTasks('completed')"> Completed
+            </label>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
